@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>demo_page</title>
+
+<style>
+body {
+    margin-top: 300px; 
+}
+ .heading-16 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.heading-16::before,
+.heading-16::after {
+    width: 3px;
+    height: 40px;
+    background-color: #2589d0;
+    content: '';
+}
+
+.heading-16::before {
+    transform: rotate(-35deg);
+    margin-right: 30px;
+}
+
+.heading-16::after {
+    transform: rotate(35deg);
+    margin-left: 30px;
+}
+
+.balloon-006 {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    position: relative;
+    max-width: 300px;
+    margin: 15px auto 0; /* 上边距 15px，左右自动居中 */
+    padding: .8em 1.2em;
+    border: 3px solid #2589d0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333333;
+}
+
+.balloon-006::before,
+.balloon-006::after {
+    position: absolute;
+    top: -15px;
+    width: 30px;
+    height: 15px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    content: '';
+}
+
+.balloon-006::before {
+    background-color: #2589d0;
+}
+
+.balloon-006::after {
+    top: -11px;
+    background-color: #fff;
+}　
+
+
+  </style>
+  </head>
+  <body>
+
+ 
+  
+  
+  <h2 class="heading-16">HI HI 我是DEMO PAGE</h2>
+
+  <div class="balloon-006">
+    Made By yuanjptalker.com
+</div>
+  </body>
+</html>
